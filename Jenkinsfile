@@ -7,9 +7,17 @@ pipeline {
                 sh '''
                 ls -la
                 javac Tester.java
-                java Tester
                 ls -la
 
+                '''
+            }
+        }
+        stage('Test') {
+            steps {
+                sh '''
+                ls -la
+                java Tester
+                ls -la
                 '''
             }
         }
