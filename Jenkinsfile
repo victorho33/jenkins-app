@@ -6,10 +6,10 @@ pipeline {
             steps {
                 sh '''
                 ls -la
-                javac Test.java
-                java Test
+                javac Tester.java
+                java Tester
                 ls -la
-                
+
                 '''
             }
         }
